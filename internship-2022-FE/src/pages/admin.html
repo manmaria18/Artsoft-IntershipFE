@@ -1,0 +1,39 @@
+<body id="body">
+<div class="page admin" id="adminPage">
+    <h2>Admin</h2>
+    <button id="home" data-target="home">Home</button>
+    <!--<a href="/home">Home</a> --> 
+    <button id="modalButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Call us now!
+    </button>
+    <include src="templates/modal.html"></include>
+    <include src="templates/tabel.html"></include>
+
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="page-item" id="pag1"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" id="pag2"><a class="page-link" href="#">2</a></li>
+        <li class="page-item" id="pag3"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--<div id="listingTable"></div>
+    <a href="prevPage()" id="btn_prev">Prev</a>
+    <a href="nextPage()" id="btn_next">Next</a>
+    page: <span id="page"></span>-->
+    <!--<script src="scripts/admin.js"></script>-->
+     
+</div>
+</body>

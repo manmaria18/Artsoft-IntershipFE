@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="../styles/scripts.bcf3243b.css">-->
+    <title>Internship Starter Kit</title>
+<link rel="stylesheet" href="/scripts.bcf3243b.css"></head>
+
+<body>
+
+    <!--<include src="templates/header.html"></include>
+    <include src="templates/poster.html"></include>
+    <include src="templates/body.html"></include>
+    <include src="templates/footer.html"></include>
+    <include src="templates/tabel.html"></include>-->
+    
+    <body id="body">
+<div class="page admin" id="adminPage">
+    <h2>Admin</h2>
+    <button id="home" data-target="home">Home</button>
+    <!--<a href="/home">Home</a> --> 
+    <button id="modalButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Call us now!
+    </button>
+    <!-- <div id="contactModal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2>You can call us at:</h2>
+          <a href="">(+4) 0264 403 662</a> or
+          <a href="">(+4) 0264 403 489</a>
+          
+          <form name="myForm" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" name="firstName">  </br>
+            </div>
+            <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" name="lastName">  </br>
+            </div>
+            <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="text" name="phone">  </br>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary submit-button">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="firstName" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              First name cannot be null!
+            </div>-->
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control is-valid" id="lastName" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Last name cannot be null!
+            </div>-->
+        
+        
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone number</label>
+            <input type="text" class="form-control is-valid" id="phoneNumber" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Phone number cannot be null!
+              Phone number must contain only digits!
+            </div>-->
+          </div>
+          <div class="mb-3">
+            <label for="status" class="form-label">Status</label>
+            <input type="text" class="form-control is-valid" id="status" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Phone number cannot be null!
+              Phone number must contain only digits!
+            </div>-->
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary submit-button">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+ Modal 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="mb-3">
+            <label for="currentId" class="form-label">Id</label>
+            <input type="text" class="form-control is-valid" id="currentId" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              First name cannot be null!
+            </div>-->
+          </div>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control is-valid" id="firstName2" required="">
+            <!-- <div class="valid-feedback">
+              Looks good!
+            </div> 
+            <div class="invalid-feedback">
+              First name cannot be null!
+            </div> -->
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control is-valid" id="lastName2" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Last name cannot be null!
+            </div>-->
+        
+        
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone number</label>
+            <input type="text" class="form-control is-valid" id="phoneNumber2" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Phone number cannot be null!
+              Phone number must contain only digits!
+            </div>-->
+          </div>
+          <div class="mb-3">
+            <label for="status" class="form-label">Status</label>
+            <input type="text" class="form-control is-valid" id="status2" required="">
+            <!--<div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Phone number cannot be null!
+              Phone number must contain only digits!
+            </div>-->
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="edit-button" type="button" class="btn btn-primary edit-button">Save changes</button>
+      </div>
+    </div>
+  </div> 
+</div> 
+    <DOCTYPE HTML="">
+<html lang="en"> 
+   <!-- <table class="table table-bordered">
+        <thead>
+          <tr class="table-active">
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">PhoneNumber</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>0766475472</td>
+          </tr>
+          <tr class="table-active">
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>0745654388</td>
+          </tr>
+        </tbody>
+      </table>-->
+      
+      <table id="table" class="table table-striped table-bordered table-primary">
+      <!--  <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">PhoneNumber</th>
+            <th scope="col">Status</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+
+          </tr>
+        </thead>-->
+      </table>
+</html></DOCTYPE>
+
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="page-item" id="pag1"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" id="pag2"><a class="page-link" href="#">2</a></li>
+        <li class="page-item" id="pag3"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--<div id="listingTable"></div>
+    <a href="prevPage()" id="btn_prev">Prev</a>
+    <a href="nextPage()" id="btn_next">Next</a>
+    page: <span id="page"></span>-->
+    <!--<script src="scripts/admin.js"></script>-->
+     
+</div>
+</body>
+    <div class="page home">
+   
+    <!--<button data-target="admin">Admin</button>
+    <a href="/admin">Admin</a>-->
+
+    <header>
+    <img class="img-fluid" src="/image-4d149c96e4054bb82e427d3058910d99.044e7a4d.jpg" alt="ArtSoft Logo">
+    <!--<nav class="custom-container">
+        <ul>
+            <li><a href="">Home</a> </li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a> </li>
+            <li><a href="">News</a></li>
+        </ul>
+    </nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+               <!-- <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+               <a class="nav-link" data-target="admin" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+ <button id="modalButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Call us now!
+ </button>
+</header>
+    <main>
+    <div class="poster">
+        <div class="text-box">
+            <h3>Powerful packed services</h3>
+            <h1>Better Solution At Your Fingertips</h1>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button" id="indigo">Contact us</button>
+            <button class="btn btn-primary" type="button" id="violet">Learn more</button>
+            
+        </div>
+    </div>
+
+
+    <div class="txt">
+            <div class="text-box2">
+                <h2>Smart Solutions For Your Buisness</h2> 
+            </div>
+            <div class="bluebar">
+                <div id="blue"></div>
+            </div>
+           
+          
+        
+       
+    </div>
+
+
+    
+</main>
+    <body>
+<div class="body">
+    <div class="paragraf1">
+
+        <img class="img-fluid" src="/image-2cb5c4d9eca1c3c50dd3c3b2bb49fbe3.a97af035.jpg" alt="lightning">
+        <div id="text1">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+    </div> 
+
+    <div class="paragraf2">
+
+        <img class="img-fluid" src="/image-2c554b7f277ce670a3331ea9f4d7a82a.0643b1e2.jpg" alt="river">
+        <div id="text2">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+    </div> 
+
+    <div class="paragraf3">
+
+        <img class="img-fluid" src="/image-2cb5c4d9eca1c3c50dd3c3b2bb49fbe3.a97af035.jpg" alt="lightning">
+        <div id="text3">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+    </div>
+
+   <!-- <div id="p2">TEXT AND PICTURE DIV HERE</div> </br>
+
+    <div id="p3">TEXT AND PICTURE DIV HERE</div>
+   -->
+
+</div>
+<!--
+<div id="footer">
+    <br />
+    Footer
+</div>
+-->
+</body>
+    <footer>
+   <!--<img class='logo' src="./images/logo.png" alt="Company Logo">-->
+   <div class="footer">
+        <div class="text-boxF">
+        <h3>Copyright Artsoft 2022</h3>
+        </div>
+        <div class="footerLogo">
+            <img src="/image-0edb5982a2d8070f7d7bb0d598af69f7.efdc6c4b.jpg" alt="">
+        </div>
+
+   </div>
+</footer>
+
+</div>
+
+   
+    <script src="/Admin.3c129742.js"></script>
+    <script src="/scripts.bcf3243b.js"></script>
+    
+
+</body>
+
+</html>
